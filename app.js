@@ -3,7 +3,8 @@ const express = require("express");
 const cors = require("cors");
 const path = require("path");
 const cookieParser = require("cookie-parser");
-require("dotenv").config();
+const mongoose = require("mongoose");
+const config = require("./app/config");
 
 const indexRouter = require("./app/routes/index");
 
@@ -18,18 +19,10 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", indexRouter);
 
-if (process.env.MODE == "dev") {
-  const port = process.env.PORT || 5000;
-  app.listen(port, () => console.log(`Server started on ${port}`));
-} else {
-  http
-    .createServer((req, res) => {
-      res.writeHead(301, {
-        Location: "https://" + req.headers["host"] + req.url,
-      });
-      res.end();
-    })
-    .listen(80, () => {
-      console.log(`HTTP Server running on port 80`);
-    });
-}
+mongoose
+  .connect(config.db)
+  .then((res) => console.log("database connected"))
+  .catch((err) => console.log(err));
+
+const port = process.env.PORT || 5000;
+app.listen(port, () => console.log(`Server started on ${port}`));

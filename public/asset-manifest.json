@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.852493e1.css",
-    "main.js": "/static/js/main.14abd3ef.js",
+    "main.css": "/static/css/main.aec00feb.css",
+    "main.js": "/static/js/main.c61f7382.js",
     "static/media/Stay Dreaming Regular.ttf": "/static/media/Stay Dreaming Regular.5f41e4323ae718ea1439.ttf",
     "static/media/Tottenhanhotspur.png": "/static/media/Tottenhanhotspur.595a4dd3f1e8f7664932.png",
     "static/media/farmersworld.png": "/static/media/farmersworld.438c011c91b07fb99456.png",
@@ -36,11 +36,11 @@
     "static/media/express.png": "/static/media/express.2084ce56d111a56f9b6c.png",
     "static/media/globe2.svg": "/static/media/globe2.49f76029015fad74a47a3551b2ae34fa.svg",
     "index.html": "/index.html",
-    "main.852493e1.css.map": "/static/css/main.852493e1.css.map",
-    "main.14abd3ef.js.map": "/static/js/main.14abd3ef.js.map"
+    "main.aec00feb.css.map": "/static/css/main.aec00feb.css.map",
+    "main.c61f7382.js.map": "/static/js/main.c61f7382.js.map"
   },
   "entrypoints": [
-    "static/css/main.852493e1.css",
-    "static/js/main.14abd3ef.js"
+    "static/css/main.aec00feb.css",
+    "static/js/main.c61f7382.js"
   ]
 }
