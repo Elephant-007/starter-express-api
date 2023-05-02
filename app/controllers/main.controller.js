@@ -10,7 +10,7 @@ const methods = {
     res.render("contact");
   },
   manage: (req, res) => {
-    res.render("manage");
+    res.render("manage", { urls: "/*" });
   },
   addContact: async (req, res) => {
     const data = req.body;

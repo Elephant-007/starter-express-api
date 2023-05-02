@@ -5,7 +5,7 @@ const authMiddleware = require("../middlewares/auth");
 
 router.get("/", controller.main.index);
 router.get("/resume", controller.main.resume);
-router.get("/manage/*", controller.main.manage);
+router.get("/manage", controller.main.manage);
 
 router.get("/resume/contact", controller.main.contact);
 router.get("/contact", controller.main.readContact);
