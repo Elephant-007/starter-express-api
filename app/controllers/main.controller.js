@@ -9,9 +9,11 @@ const methods = {
   contact: (req, res) => {
     res.render("contact");
   },
+  manage: (req, res) => {
+    res.render("manage");
+  },
   addContact: async (req, res) => {
     const data = req.body;
-    console.log(data);
     const newContact = new ContactModel({ ...data });
     const result = await newContact.save();
     if (result) return res.status(200).send(result);
