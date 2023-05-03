@@ -98,4 +98,9 @@ router.delete(
   controller.api.address.delete
 );
 
+router.get("/api/bid", authMiddleware, controller.api.bid.read);
+router.post("/api/bid", authMiddleware, controller.api.bid.create);
+router.put("/api/bid/:id", authMiddleware, controller.api.bid.update);
+router.delete("/api/bid/:id", authMiddleware, controller.api.bid.delete);
+
 module.exports = router;
